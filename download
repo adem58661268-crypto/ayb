@@ -1,0 +1,51 @@
+
+import React from 'react';
+import { Instagram, Smartphone, MessageSquare } from 'lucide-react';
+
+export const Socials: React.FC = () => {
+  return (
+    <section className="py-24 bg-gradient-to-b from-transparent to-blue-600/5 transition-colors duration-300">
+      <div className="container mx-auto px-6 text-center">
+        <h3 className="text-2xl font-bold text-gray-500 dark:text-gray-400 mb-8 tracking-widest uppercase">تابعني على منصات التواصل</h3>
+        
+        <div className="flex flex-wrap justify-center gap-8 mb-16">
+          <a 
+            href="http://tiktok.com/@ayb_editor" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex flex-col items-center group"
+          >
+            <div className="w-20 h-20 glass rounded-3xl flex items-center justify-center mb-4 group-hover:bg-[#000000] group-hover:text-white group-hover:scale-110 transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(0,0,0,0.4)] text-gray-900 dark:text-white">
+              <Smartphone size={32} />
+            </div>
+            <span className="font-bold text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">TikTok</span>
+          </a>
+
+          <a 
+            href="https://www.instagram.com/ayb_editor" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex flex-col items-center group"
+          >
+            <div className="w-20 h-20 glass rounded-3xl flex items-center justify-center mb-4 group-hover:bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 group-hover:text-white group-hover:scale-110 transition-all duration-300 text-gray-900 dark:text-white">
+              <Instagram size={32} />
+            </div>
+            <span className="font-bold text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">Instagram</span>
+          </a>
+
+          <a 
+            href="https://wa.me/message/SMS2BUE5RWZTA1" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex flex-col items-center group"
+          >
+            <div className="w-20 h-20 glass rounded-3xl flex items-center justify-center mb-4 group-hover:bg-[#25D366] group-hover:text-white group-hover:scale-110 transition-all duration-300 text-gray-900 dark:text-white">
+              <MessageSquare size={32} />
+            </div>
+            <span className="font-bold text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
